@@ -46,7 +46,10 @@ function Products() {
       </div>
 
       {loading ? (
-        <p>Loading products...</p>
+        <div className="product-loading">
+          <div className="loading-spinner"></div>
+          <p>Loading products...</p>
+        </div>
       ) : filteredProducts.length === 0 ? (
         <p>No products found.</p>
       ) : (
